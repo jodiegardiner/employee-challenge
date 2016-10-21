@@ -1,7 +1,7 @@
 from staff.employees import Employee
 
 class Developer(Employee):
-    def __init__(self, fname, sname, noofyears, lang):
+    def __init__(self, fname, sname, noofyears, lang='Python'):
         self.lang = lang
         Employee.__init__(self, fname, sname, noofyears)
 
