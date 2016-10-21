@@ -3,10 +3,10 @@ class Employee:
     employee_number = 0
 
     def __init__(self, fname, sname, noofyears):
-        Employee.employee_number +=1
+        Employee.employee_number += 1
         self.fname = fname
         self.sname = sname
-        self.id = Employee.employee_number
+        self.employee_number = Employee.employee_number
         self.noofyears = noofyears
 
     def calculate_salary(self):
@@ -22,3 +22,4 @@ class Employee:
     def get_details(self):
         return ' \n------------------------\n First Name: %s\n Surname %s\n Years Worked: %s\n Employee Number: %s\n Salary: %s' \
                % (self.fname, self.sname, self.noofyears, self.employee_number, self.calculate_salary())
+
